@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS/web.css">
+    <link rel="stylesheet" href="../CSS/flex.css">
+    <link rel="stylesheet" href="../CSS/index.css">
+    <title>Web 5ème</title>
+</head>
+
+<body>
+    <header class="center">
+        <h1 class="noneMobile">Voici le parcours pour la partie web</h1>
+        <ul class="menu flex space-evenly noPuce">
+            <li><a href="annee3.html">3ème</a></li>
+            <li><a href="annee4.html">4ème</a></li>
+            <li class="menuSelected"><a href="annee5.html">5ème</a></li>
+            <li><a href="../index.html">Back</a></li>
+        </ul>
+    </header>
+    <main>
+        <div>
+            <p class="justify">
+                Cette année, nous allons attaquer la partie dynamique d'un site web.
+                Cela signifie qu'une base de données est ajouté à votre site permettant
+                un système d'utilisateurs qui auront chacun leur biens.
+            </p>
+            <p class="text-danger">IMPORTANT : à la fin de chaque étape, push ton projet sur Github</p>
+        </div>
+        <div>
+            <ol type="A" class="listeTypeAlphabet">
+                <li>Étape 1
+                    <p>Constuire des formulaires</p>
+                    <ol class="listeTypeDecimal">
+                        <li>Transformer tous ses fichiers html en fichiers php</li>
+                        <li>Créer d'un formulaire avec des fieldset, legend, des input type text et ses labels</li>
+                        <li>Ajouter des inputs d'autres
+                            <a class="lienImportant" href="https://developer.mozilla.org/fr/docs/Web/HTML/Element/input"
+                                target="_blank" rel="noopener noreferrer">
+                                types
+                            </a> (number, password, email, date, checkbox, ...)
+                        </li>
+                        <li>Ajouter du bouton submit pour envoyer les données</li>
+                        <li>Mettre les
+                            <a class="lienImportant"
+                                href="https://developer.mozilla.org/fr/docs/Web/HTML/Element/input#attributs"
+                                target="_blank" rel="noopener noreferrer">
+                                attributs
+                            </a> telles que palceholder, min, max, value, ...
+                        </li>
+                    </ol>
+                </li>
+                <li>Étape 2
+                    <p>Ajouter la base de données</p>
+                    <ol class="listeTypeDecimal">
+                        <li>Rappel de l'<a href="../AUTRE/annee4BDD.html" class="lienImportant">UAA7</a> de la 4ème</li>
+                        <li>Préparer le serveur hebergeant la base de données</li>
+                        <li>Créer la base de données ainsi que les différentes entités liées à son MLD</li>
+                        <li>Ajouter des données dans la base permettant de l'utiliser</li>
+                        <li>Connecter son site à la base de données</li>
+                        <li>Faire une première requête propre avec le prepare, execute et fetchAll pour récupérer les biens</li>
+                    </ol>
+                </li>
+                <li>Étape 3
+                    <p>Structurer son code avec MVC</p>
+                    <ol class="listeTypeDecimal">
+                        <li>Comprendre le système <a
+                                href="https://docs.google.com/presentation/d/12wpCiTN_BzS2z4hJrrnTQUoupKlFHzwkv9hTzZjmQGw/edit?usp=sharing"
+                                class="lienImportant" target="_blank">MVC</a> pour mieux structurer son projet</li>
+                        <li>Adapter son arborescence pour correspondre au modèle MVC</li>
+                        <li>Créer le routage dans le controller pour passer d'une page à l'autre selon l'URL</li>
+                        <li>Afficher la première page avec tous les biens</li>
+                        <li>Création d'un premier component navbar</li>
+                        <li>Afficher les pages connexion et inscription</li>
+                    </ol>
+                </li>
+                <li>Étape 4
+                    <p>CRUD utilisateur</p>
+                    <ol class="listeTypeDecimal">
+                        <li>Traiter le formulaire d'inscription avec $_POST</li>
+                        <li>Vérifier que les données ne sont pas vide côté serveur</li>
+                        <li>Vérifier l'unicité des données selon des critères pertinents</li>
+                        <li>Gérer la variable globale $_SESSION</li>
+                        <li>Traiter la connexion/déconnexion de l'utilisateur avec le fetch</li>
+                        <li>Changer l'affichage du menu selon l'état de l'utilisateur</li>
+                        <li>Permettre à l'utilisateur de modifier son profil</li>
+                        <li>Permettre à l'utilisateur de supprimer son profil</li>
+                    </ol>
+                </li>
+                <li>Étape 5
+                    <p>CRUD biens</p>
+                    <ol class="listeTypeDecimal">
+                        <li>Afficher la page des biens personnels</li>
+                        <li>Permettre à l'utilisateur de modifier son bien</li>
+                        <li>Permettre à l'utilisateur de supprimer son bien</li>
+                        <li>Permettre à l'utilisateur de créer un nouveau bien</li>
+                    </ol>
+                </li>
+                <li>Étape 6
+                    <p>Partie sécurité</p>
+                    <ol class="listeTypeDecimal">
+                        <li>Éviter les injections SQL depuis un formulaire</li>
+                        <li>Empêcher une personne de supprimer/modifier le bien de quelqu'un d'autre</li>
+                        <li>Éviter les attaques XSS</li>
+                    </ol>
+                </li>
+                <li>Étape 7
+                    <p>Bonus</p>
+                    <ol class="listeTypeDecimal">
+                        <li>Gérer les images dans la base de données</li>
+                        <li>Ajouter des flash messages avec la bonne couleur</li>
+                        <li>Héberger son site sur heroku</li>
+                        <li>Ajouter des rôles aux utilisateurs de son site</li>
+                        <li>Ajouter un système de filtrage sur les biens avec $_GET</li>
+                    </ol>
+                </li>
+            </ol>
+        </div>
+    </main>
+    <footer class="flex space-around align-item-center">
+        <a href="https://www.asty-moulin.be/j34/" target="_blank" rel="noopener noreferrer">Notre école</a>
+        <a href="http://b-staff.be/identification.php" target="_blank" rel="noopener noreferrer">BSchool</a>
+    </footer>
+</body>
+
+</html>

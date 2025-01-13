@@ -1,0 +1,54 @@
+body {
+    background-color: lavender;
+    margin: 0;
+    padding: 0;
+}
+main {
+    width: 80%;
+    margin: 0 auto;
+}
+
+/* Mettre les titres h1 en couleur bleue, taille 50px et la police en Arial */
+h1 {
+    color: blue;
+    font-size: 50px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: underline;
+    text-align: center;
+}
+
+h2 {
+    color: green;
+    font-size: 30px;
+    font-family: 'Times New Roman', Times, serif;
+    text-decoration: wavy underline overline;
+}
+
+img {
+    width: 300px;
+    height: auto;
+}
+
+ol li {
+    font-size: 30px ;
+}
+
+button {
+    height: 40px;
+    width: 100px;
+    border-radius: 70%;
+    border: 1px solid white;
+    background-color: blueviolet;
+    color: whitesmoke;
+    cursor: pointer;
+}
+
+a {
+    text-decoration: none;
+}
+
+table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+    padding: 10px;
+}
