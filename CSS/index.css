@@ -35,7 +35,7 @@ h1 {
     margin: 0;
     padding: 3% 0 0 0;
     text-align: center;
-    color: #8f1e8f;
+    color: #cf2acf;
     text-shadow: #8f1e8f 1px 0 5px;
 }
 
@@ -47,6 +47,16 @@ h1 {
 
 .pagesCours i {
     color: rgba(255, 255, 255, 0.61);
+}
+
+.text-danger {
+    font-weight: 600;
+    color: rgb(187, 0, 0);
+    font-stretch: expanded;
+}
+
+u {
+    font-size: xx-large;
 }
 
 /* ---- */
@@ -161,22 +171,32 @@ h1 {
 
 .videoContainer {
     display: flex;
-    flex-direction: column; /* Organise les éléments en colonne */
-    align-items: start; /* Aligne les éléments à gauche */
-    margin-bottom: 20px; /* Espacement entre les vidéos */
+    flex-direction: column;
+    /* Organise les éléments en colonne */
+    align-items: start;
+    /* Aligne les éléments à gauche */
+    margin-bottom: 20px;
+    /* Espacement entre les vidéos */
 }
 
 .videoNumber {
-    font-size: 1.1rem; /* Taille légèrement plus grande pour le numéro */
-    font-weight: bold; /* Met le texte en gras */
-    margin-bottom: 10px; /* Espace entre le numéro et la vidéo */
-    color: white; /* Texte blanc */
+    font-size: 1.1rem;
+    /* Taille légèrement plus grande pour le numéro */
+    font-weight: bold;
+    /* Met le texte en gras */
+    margin-bottom: 10px;
+    /* Espace entre le numéro et la vidéo */
+    color: white;
+    /* Texte blanc */
 }
 
 .noneMobile {
-    border: 1px solid rgba(255, 255, 255, 0.3); /* Bordure blanche discrète */
-    border-radius: 8px; /* Coins arrondis */
-    margin: 0; /* Supprime tout espace autour de l'iframe */
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    /* Bordure blanche discrète */
+    border-radius: 8px;
+    /* Coins arrondis */
+    margin: 0;
+    /* Supprime tout espace autour de l'iframe */
 }
 
 
@@ -185,14 +205,14 @@ h1 {
 .cardFront p {
     margin: 0;
     text-align: center;
-    color: #8f1e8f;
+    color: #cf2acf;
     text-shadow: #8f1e8f 1px 0 3px;
     padding: 0 5%;
 }
 
 .IMPORTANT {
     color: #4a00e0;
-    text-shadow: #4a00e0 1px 0 5px;
+    text-shadow: #4a00e0 1px 0 3px;
 }
 
 .IMPORTANTp {
@@ -400,7 +420,7 @@ h1 {
 
 .cardColor {
     width: 14%;
-    padding: 1px 1px 5px 1px;
+    padding: 2px 2px 6px 2px;
     background-image: linear-gradient(163deg, #8f1e8f 0%, #4a00e0 100%);
     border-radius: 10px;
     transition: all .3s;
