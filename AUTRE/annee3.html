@@ -15,6 +15,9 @@
     <div id="code-loader" class="code-loader background">
         <span>{</span><span>}</span>
     </div>
+    <div class="progress-bar-container">
+        <div class="progress-bar" id="progressBar"></div>
+    </div>
 
     <header>
         <div>
@@ -72,7 +75,7 @@
             </div>
             <div class="TopMenuPage">
                 <a href="./annee3.html">
-                    <button class="ButtonTop ButtonTop-roundLeft-Sous sousMenu butACTIF">
+                    <button class="ButtonTop ButtonTop-roundLeft-Sous sousMenu butACTIFsousMenu">
                         <span><svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                                 <path d="M0 0h24v24H0z" fill="none"></path>
                                 <path
@@ -134,16 +137,13 @@
                     sont plus professionnels.</i>
             </p>
         </div>
-        <ul class="sous-menu menu flex noPuce space-evenly">
-            <li onclick="toogleVisibility('Word', this, 0)" class="menuSelected">Word</li>
-            <li onclick="toogleVisibility('PowerPoint', this, 0)">PowerPoint</li>
-            <li onclick="toogleVisibility('Excel', this, 0)">Excel</li>
-        </ul>
-        <div id="Word" class="visible">
-            <ol type="A" class="listeTypeAlphabet">
-                <li>
-                    Étape 1
-                    <p>Gérer l'onglet accueil et les niveaux de titre</p>
+        <div>
+            <h1>Word</h1>
+            <ol type="I">
+                <li class="step">
+                    <h1>Gérer l'onglet accueil et les niveaux de titre</h1>
+                </li>
+                <div class="content">
                     <ol class="listeTypeDecimal">
                         <li>Changer la police de caractère</li>
                         <li>Changer la taille de police</li>
@@ -169,10 +169,12 @@
                                 target="_blank">Vidéo explicative</a>
                         </li>
                     </ol>
+                </div>
+
+                <li class="step">
+                    <h1>Insertion d'éléments dans Word</h1>
                 </li>
-                <li>
-                    Étape 2
-                    <p>Insertion d'éléments dans Word</p>
+                <div class="content">
                     <ol class="listeTypeDecimal">
                         <li>Insérer des tableaux</li>
                         <li>Insérer des images</li>
@@ -199,10 +201,12 @@
                                 target="_blank">Vidéo explicative</a>
                         </li>
                     </ol>
+                </div>
+
+                <li class="step">
+                    <h1>Gérer la mise en page d'un document Word</h1>
                 </li>
-                <li>
-                    Étape 3
-                    <p>Gérer la mise en page d'un document Word</p>
+                <div class="content">
                     <ol class="listeTypeDecimal">
                         <li>Faire la différence entre un saut de page et un saut de section</li>
                         <li>Changer l'orientation des pages (portrait et paysage)</li>
@@ -229,10 +233,12 @@
                                 target="_blank">Vidéo explicative</a>
                         </li>
                     </ol>
+                </div>
+
+                <li class="step">
+                    <h1>Gérer les tabulations et les espacements</h1>
                 </li>
-                <li>
-                    Étape 4
-                    <p>Gérer les tabulations et les espacements</p>
+                <div class="content">
                     <ol class="listeTypeDecimal">
                         <li>Faire une suite de ligne en pointillé</li>
                         <li>Utiliser toutes les tabulations (gauche, droite, virgule, ...)</li>
@@ -267,10 +273,12 @@
                                 target="_blank">Vidéo explicative</a>
                         </li>
                     </ol>
+                </div>
+
+                <li class="step">
+                    <h1>Exercices supplémentaires</h1>
                 </li>
-                <li>
-                    Étape 5
-                    <p>Exercices supplémentaires</p>
+                <div class="content">
                     <ol class="listeTypeDecimal">
                         <li>
                             <a class="lienImportant"
@@ -300,42 +308,60 @@
                                 explicative</a>
                         </li>
                     </ol>
-                </li>
+                </div>
             </ol>
         </div>
-        <div class="hidden" id="PowerPoint">
-            <ol type="A" class="listeTypeAlphabet">
-                <li>
-                    Étape 1
-                    <p>Rechercher les informations importantes dans un texte</p>
+
+
+
+        <div>
+            <h1>PowerPoint</h1>
+            <ol type="I">
+                <li class="step">
+                    <h1>Rechercher les informations importantes dans un texte</h1>
+                </li>
+                <div class="content">
                     <ol class="listeTypeDecimal">
                         <li>Travailler avec des puces</li>
                         <li>Une puce => une phrase</li>
                         <li>Choisir un thème de PowerPoint</li>
                     </ol>
+                </div>
+
+                <li class="step">
+                    <h1>Construire son PowerPoint</h1>
                 </li>
-                <li>
-                    Étape 2
-                    <p>Construire son PowerPoint</p>
+                <div class="content">
                     <ol class="listeTypeDecimal">
                         <li>Ajouter des slides</li>
                         <li>Maitriser les slides de différents types (titre et contenue, comparaison, ...)</li>
                         <li>Insertion d'images, vidéos et tous autres éléments</li>
                     </ol>
+                </div>
+
+                <li class="step">
+                    <h1>Animer son PowerPoint</h1>
                 </li>
-                <li>
-                    Étape 3
-                    <p>Animer son PowerPoint</p>
+                <div class="content">
                     <ol class="listeTypeDecimal">
                         <li>Ajouter des liens pour passer d'uns slide à une autre</li>
                         <li>Ajouter des transitions</li>
                         <li>Ajouter des animations</li>
                     </ol>
-                </li>
+                </div>
             </ol>
         </div>
-        <div class="hidden" id="Excel">
+
+        <div>
             <h1>Excel</h1>
+            <ol type="I">
+                <li class="step">
+                    <h1>En Cours</h1>
+                </li>
+                <div class="content">
+                    <p>En Cours</p>
+                </div>
+            </ol>
         </div>
     </main>
 

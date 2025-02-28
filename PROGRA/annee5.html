@@ -15,6 +15,9 @@
   <div id="code-loader" class="code-loader background">
     <span>{</span><span>}</span>
   </div>
+  <div class="progress-bar-container">
+    <div class="progress-bar" id="progressBar"></div>
+  </div>
 
   <header>
     <div>
@@ -92,7 +95,7 @@
           </button>
         </a>
         <a href="./annee5.html">
-          <button class="ButtonTop sousMenu butACTIF">
+          <button class="ButtonTop sousMenu butACTIFsousMenu">
             <span><svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                 <path d="M0 0h24v24H0z" fill="none"></path>
                 <path
@@ -127,134 +130,220 @@
 
   <main class="pagesCours">
     <div>
-      <p><i>
-          Cette année, nous allons mettre en place toutes les bases de la programmation procédurale
+      <p>
+        <i>Cette année, nous allons mettre en place toutes les bases de la programmation procédurale
           (Organiser un algorithme et découper un problème complexe en sous-problèmes).</i>
       </p>
-      <p class="text-danger">IMPORTANT : Pour chaque analyse, vous devez passer par les différentes étapes de réflexion suivantes : </p>
-      <ul>
+
+      <p class="text-danger">IMPORTANT : Pour chaque analyse, vous devez passer par les différentes étapes de réflexion
+        suivantes : </p>
+      <ul class="SmallText">
+
         <li>spécification du morceau de programme</li>
         <li>liste et description des variables locales</li>
         <li>Ecriture du GNS (algorithme)</li>
       </ul>
     </div>
-    <ul class="sous-menu menu flex noPuce space-evenly">
-      <li onclick="toogleVisibility('Algorithmique', this)" class="menuSelected">Algorithmique</li>
-      <li onclick="toogleVisibility('Langage', this)">Langage</li>
-    </ul>
-    <div id="Algorithmique" class="visible">
-      <h2>Partie algorithmique</h2>
-      <p class="text-info">Cette partie permet d'établir l'algorithme de résolution d'un problème. Seuls structorizer et
-        Google Docs sont utiles.</p>
-      <ol type="A" class="listeTypeAlphabet">
-        <li>Étape 1
-          <p>Rappels</p>
-          <ol class="listeTypeDecimal">
-            <li>Rappel de la matière de 3ème et 4ème (variables, séquence, alternative et boucles)</li>
-            <li>Reprise en main de structorizer</li>
-          </ol>
+    <h1>Partie algorithme</h1>
+    <p>Cette partie permet d'établir l'algorithme de résolution d'un problème. Seuls structorizer et
+      Google Docs sont utiles.</p>
+    <div>
+      <ol type="I">
+        <li class="step">
+          <h1>Rappels</h1>
         </li>
-        <li>Étape 2
-          <p>Gestion des nouvelles méthodologies</p>
-          <ol class="listeTypeDecimal">
-            <li>Séparation des traitements vis à vis des entrées et sorties</li>
-            <li>Mise en place de la notion de spécification</li>
-          </ol>
+        <div class="content PrograCote">
+          <div class="PrograInfo">
+            <ol class="listeTypeDecimal">
+              <li>Rappel de la matière de 3ème et 4ème (variables, séquence, alternative et boucles)</li>
+              <li>Reprise en main de structorizer</li>
+            </ol>
+          </div>
+          <div class="PrograCode">
+            <!-- CODE -->
+          </div>
+        </div>
+
+        <li class="step">
+          <h1>Gestion des nouvelles méthodologies</h1>
         </li>
-        <li>Étape 3
-          <p>Procédures et fonctions</p>
-          <ol class="listeTypeDecimal">
-            <li>Notion de passage de paramètres par valeur et référence</li>
-            <li>Différence entre procédure et fonction</li>
-            <li>Appel des procédures et fonctions</li>
-          </ol>
+        <div class="content PrograCote">
+          <div>
+            <ol class="listeTypeDecimal">
+              <li>Séparation des traitements vis à vis des entrées et sorties</li>
+              <li>Mise en place de la notion de spécification</li>
+            </ol>
+          </div>
+          <div>
+            <!-- CODE -->
+          </div>
+        </div>
+
+        <li class="step">
+          <h1>Procédures et fonctions</h1>
         </li>
-        <li>Étape 4
-          <p>Notion de tableau</p>
-          <ol class="listeTypeDecimal">
-            <li>Création d'une variable de type tableau</li>
-            <li>Manipulation de ce tableau (parcours, remplissage, concaténation, ...)</li>
-            <li>Méthodes de tri d'un tableau (peu importe le contenu du tableau)</li>
-            <li>Résoudre des problèmes nécessitant l'utilisation de tableaux</li>
-          </ol>
+        <div class="content PrograCote">
+          <div>
+            <ol class="listeTypeDecimal">
+              <li>Notion de passage de paramètres par valeur et référence</li>
+              <li>Différence entre procédure et fonction</li>
+              <li>Appel des procédures et fonctions</li>
+            </ol>
+          </div>
+          <div>
+            <!-- CODE -->
+          </div>
+        </div>
+
+        <li class="step">
+          <h1>Notion de tableau</h1>
         </li>
-        <li>Étape 5
-          <p>Notion de matrice</p>
-          <ol class="listeTypeDecimal">
-            <li>Création d'une variable de type matrice</li>
-            <li>Manipulation de cette matrice (parcours, remplissage, concaténation, ...)</li>
-            <li>Méthodes standard sur des matrices de type entier (addition, multiplication, ...)</li>
-            <li>Résoudre des problèmes nécessitant l'utilisation de matrices</li>
-          </ol>
+        <div class="content PrograCote">
+          <div>
+            <ol class="listeTypeDecimal">
+              <li>Création d'une variable de type tableau</li>
+              <li>Manipulation de ce tableau (parcours, remplissage, concaténation, ...)</li>
+              <li>Méthodes de tri d'un tableau (peu importe le contenu du tableau)</li>
+              <li>Résoudre des problèmes nécessitant l'utilisation de tableaux</li>
+            </ol>
+          </div>
+          <div>
+            <!-- CODE -->
+          </div>
+        </div>
+
+        <li class="step">
+          <h1>Notion de matrice</h1>
         </li>
+        <div class="content PrograCote">
+          <div>
+            <ol class="listeTypeDecimal">
+              <li>Création d'une variable de type matrice</li>
+              <li>Manipulation de cette matrice (parcours, remplissage, concaténation, ...)</li>
+              <li>Méthodes standard sur des matrices de type entier (addition, multiplication, ...)</li>
+              <li>Résoudre des problèmes nécessitant l'utilisation de matrices</li>
+            </ol>
+          </div>
+          <div>
+            <!-- CODE -->
+          </div>
+        </div>
       </ol>
-    </div>
-    <div id="Langage" class="hidden">
-      <h2>Partie langage</h2>
-      <p class="text-info">Cette partie permet de traduire les algorithmes en C#. </p>
-      <ol type="A" class="listeTypeAlphabet">
-        <li>Étape 1
-          <p>Prise en main de visual studio Community 2022</p>
-          <ol class="listeTypeDecimal">
-            <li>Connexion grâce au compte microsoft fourni par l'école</li>
-            <li>Construction d'un projet console .Net</li>
-          </ol>
+
+
+      <h1>Partie langage</h1>
+      <p>Cette partie permet de traduire les algorithmes en C#. </p>
+      <ol type="I">
+        <li class="step">
+          <h1>Prise en main de visual studio Community 2022</h1>
+
         </li>
-        <li>Étape 2
-          <p>Premiers programmes</p>
-          <ol class="listeTypeDecimal">
-            <li>Maitrise des entrées et sorties (Console.ReadLine et Console.WriteLine)</li>
-            <li>Syntaxe d'une procédure (<span class="text-danger">Interdiction d'écrire des traitements dans le
-                main</span>)</li>
-            <li>Déclaration et affectation des variables</li>
-            <li>Traduction des opérations mathématiques</li>
-            <li>Traduction d'alternative et de boucles</li>
-            <li>Appel de la procédure</li>
-          </ol>
+        <div class="content PrograCote">
+          <div class="PrograInfo">
+            <ol class="listeTypeDecimal">
+              <li>Connexion grâce au compte microsoft fourni par l'école</li>
+              <li>Construction d'un projet console .Net</li>
+            </ol>
+          </div>
+          <div class="PrograCode">
+            <!-- CODE -->
+          </div>
+        </div>
+
+        <li class="step">
+          <h1>Premiers programmes</h1>
         </li>
-        <li>Étape 3
-          <p>Vérification des entrées utilisateur</p>
-          <ol class="listeTypeDecimal">
-            <li>Conversion de type de variables (parse, ...)</li>
-            <li>Utilisation du tryParse</li>
-            <li>Vérification des hypothèses avant l'appel du traitement</li>
-          </ol>
+        <div class="content PrograCote">
+          <div class="PrograInfo">
+            <ol class="listeTypeDecimal">
+              <li>Maitrise des entrées et sorties (Console.ReadLine et Console.WriteLine)</li>
+              <li>Syntaxe d'une procédure (<span class="text-danger">Interdiction d'écrire des traitements dans le
+                  main</span>)</li>
+              <li>Déclaration et affectation des variables</li>
+              <li>Traduction des opérations mathématiques</li>
+              <li>Traduction d'alternative et de boucles</li>
+              <li>Appel de la procédure</li>
+            </ol>
+          </div>
+          <div class="PrograCode">
+            <!-- CODE -->
+          </div>
+        </div>
+
+        <li class="step">
+          <h1>Vérification des entrées utilisateur</h1>
         </li>
-        <li>Étape 4
-          <p>Procédures et fonctions</p>
-          <ol class="listeTypeDecimal">
-            <li>Traduction des signatures</li>
-            <li>Passage de paramètres par valeur et référence (ref, out)</li>
-            <li>Return de valeur pour les fonctions</li>
-            <li>Invocation des procédures et fonctions</li>
-            <li>Utilisation des procédures et fonctions propres au langage (Length, ...)</li>
-            <li>Création d'une structure pour stocker les sous-programmes</li>
-            <li>Utilisation de ces structures dans le programme principal</li>
-          </ol>
+
+        <div class="content PrograCote">
+          <div class="PrograInfo">
+            <ol class="listeTypeDecimal">
+              <li>Conversion de type de variables (parse, ...)</li>
+              <li>Utilisation du tryParse</li>
+              <li>Vérification des hypothèses avant l'appel du traitement</li>
+            </ol>
+          </div>
+          <div class="PrograCode">
+            <!-- CODE -->
+          </div>
+        </div>
+
+        <li class="step">
+          <h1>Procédures et fonctions</h1>
         </li>
-        <li>Étape 5
-          <p>Notion de tableau et matrice</p>
-          <ol class="listeTypeDecimal">
-            <li>Déclaration et instanciation d'une variable de type tableau et matrice</li>
-            <li>Utilisation correcte de l'indicage</li>
-            <li>Maitrise de boucles for imbriquées</li>
-          </ol>
+        <div class="content PrograCote">
+          <div class="PrograInfo">
+            <ol class="listeTypeDecimal">
+              <li>Traduction des signatures</li>
+              <li>Passage de paramètres par valeur et référence (ref, out)</li>
+              <li>Return de valeur pour les fonctions</li>
+              <li>Invocation des procédures et fonctions</li>
+              <li>Utilisation des procédures et fonctions propres au langage (Length, ...)</li>
+              <li>Création d'une structure pour stocker les sous-programmes</li>
+              <li>Utilisation de ces structures dans le programme principal</li>
+            </ol>
+          </div>
+          <div class="PrograCode">
+            <!-- CODE -->
+          </div>
+        </div>
+
+        <li class="step">
+          <h1>Notion de tableau et matrice</h1>
+
         </li>
-        <li>Étape 6
-          <p>Phase de testing</p>
-          <ol class="listeTypeDecimal">
-            <li>Utilisation des points d'arrêts</li>
-            <li>Vérification du contenu des variables en cours d'exécution</li>
-            <li>Compréhension des messages d'erreurs renvoyés</li>
-            <li>Utilisation des documents de référence (fournis ou sur web)</li>
-          </ol>
+        <div class="content PrograCote">
+          <div class="PrograInfo">
+            <ol class="listeTypeDecimal">
+              <li>Déclaration et instanciation d'une variable de type tableau et matrice</li>
+              <li>Utilisation correcte de l'indicage</li>
+              <li>Maitrise de boucles for imbriquées</li>
+            </ol>
+          </div>
+          <div class="PrograCode">
+            <!-- CODE -->
+          </div>
+        </div>
+        <li class="step">
+          <h1>Phase de testing</h1>
         </li>
+        <div class="content PrograCote">
+          <div class="PrograInfo">
+            <ol class="listeTypeDecimal">
+              <li>Utilisation des points d'arrêts</li>
+              <li>Vérification du contenu des variables en cours d'exécution</li>
+              <li>Compréhension des messages d'erreurs renvoyés</li>
+              <li>Utilisation des documents de référence (fournis ou sur web)</li>
+            </ol>
+          </div>
+          <div class="PrograCode">
+            <!-- CODE -->
+          </div>
+        </div>
       </ol>
     </div>
   </main>
 
   <script type="text/javascript" src="../JS/index.js"></script>
-
 
 </body>
 

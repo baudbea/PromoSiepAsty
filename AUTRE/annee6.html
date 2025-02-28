@@ -15,6 +15,9 @@
     <div id="code-loader" class="code-loader background">
         <span>{</span><span>}</span>
     </div>
+    <div class="progress-bar-container">
+        <div class="progress-bar" id="progressBar"></div>
+    </div>
 
     <header>
         <div>
@@ -102,7 +105,7 @@
                     </button>
                 </a>
                 <a href="./annee6.html">
-                    <button class="ButtonTop sousMenu butACTIF">
+                    <button class="ButtonTop sousMenu butACTIFsousMenu">
                         <span><svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                                 <path d="M0 0h24v24H0z" fill="none"></path>
                                 <path
@@ -128,17 +131,21 @@
     <main class="pagesCours">
         <div>
             <p>
-                <i>
-                    Cette UAA est  constituée de deux partie : quelques rudiments d'algèbre booléenne permettant d'exercer la logique 
-                    ainsi qu'une partie faisant découvrir la notion de réseau théoriquement et en pratique. 
-                    L'objectif de la seconde partie est d'être capable de mettre en place un réseau local de manière virtuelle et matérielle. 
-                </i>
+
+                <i>Cette UAA est constituée de deux partie : quelques rudiments d'algèbre booléenne permettant
+                    d'exercer la logique
+                    ainsi qu'une partie faisant découvrir la notion de réseau théoriquement et en pratique.
+                    L'objectif de la seconde partie est d'être capable de mettre en place un réseau local de manière
+                    virtuelle et matérielle.</i>
+
             </p>
         </div>
         <div>
-            <ol type="A" class="listeTypeAlphabet">
-                <li>Algèbre booléenne
-                    <p>Compétences : </p>
+            <ol type="I">
+                <li class="step">
+                    <h1>Algèbre booléenne</h1>
+                </li>
+                <div class="content">
                     <ol class="listeTypeDecimal">
                         <li>Système de porte logiques NOT, OR et AND</li>
                         <li>Sortir une table de vérité (TDV) à partir d'un schéma électronique (logigramme)</li>
@@ -147,11 +154,17 @@
                         <li>Passer d'une somme de produit à une somme de produits standards</li>
                         <li>Passer d'un produit d'une somme à un produit d'une somme standard</li>
                         <li>Simplifier une expression grâce à la méthode de Karnaugh</li>
-                        <li>A partir d'un problème concret, écrire les équations logiques associées, les simplifier et représenter leurs logigrammes </li>
+
+                        <li>A partir d'un problème concret, écrire les équations logiques associées, les simplifier et
+                            représenter leurs logigrammes </li>
+
                     </ol>
+                </div>
+
+                <li class="step">
+                    <h1>Le réseau</h1>
                 </li>
-                <li>Le réseau
-                    <p>Compétences : </p>
+                <div class="content">
                     <ol class="listeTypeDecimal">
                         <li>Connaitre les éléments liés au réseau ainsi que le vocabulaire adéquat</li>
                         <li>Classifier les réseaux (LAN, WAN, ...)</li>
@@ -161,9 +174,16 @@
                         <li>Pouvoir expliquer les différences entre eux</li>
                         <li>Schématiser un réseau en utilisant un outil tel que packet tracer</li>
                     </ol>
+                </div>
+
+                <li class="step">
+                    <h1>Mise en place en deux étapes</h1>
                 </li>
-                <li>Mise en place en deux étapes : virtuellement avec Packet tracer puis concrètement
-                    <p>Compétences : </p>
+
+                <div class="content">
+                    <h2>Virtuellement avec Packet tracer puis concrètement</h2>
+
+                
                     <ol class="listeTypeDecimal">
                         <li>Calculer des adresses de sous-réseaux selon les contraintes imposées</li>
                         <li>Assigner une adresse à un ordinateur</li>
@@ -172,13 +192,12 @@
                         <li>Ajouter des Vlan dans un réseau</li>
                         <li>Gérer les commutateurs</li>
                     </ol>
-                </li>
+                </div>
             </ol>
         </div>
     </main>
 
     <script type="text/javascript" src="../JS/index.js"></script>
-
 
 </body>
 

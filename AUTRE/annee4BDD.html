@@ -15,6 +15,9 @@
     <div id="code-loader" class="code-loader background">
         <span>{</span><span>}</span>
     </div>
+    <div class="progress-bar-container">
+        <div class="progress-bar" id="progressBar"></div>
+    </div>
 
     <header>
         <div>
@@ -92,7 +95,7 @@
                     </button>
                 </a>
                 <a href="./annee4BDD.html">
-                    <button class="ButtonTop sousMenu butACTIF">
+                    <button class="ButtonTop sousMenu butACTIFsousMenu">
                         <span><svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                                 <path d="M0 0h24v24H0z" fill="none"></path>
                                 <path
@@ -125,6 +128,7 @@
         </div>
     </header>
 
+
     <main class="pagesCours">
         <div>
             <p>
@@ -135,9 +139,11 @@
             </p>
         </div>
         <div>
-            <ol type="A" class="listeTypeAlphabet">
-                <li>Étape 1
-                    <p>MCD</p>
+            <ol type="I">
+                <li class="step">
+                    <h1>MCD</h1>
+                </li>
+                <div class="content">
                     <ol class="listeTypeDecimal">
                         <li>Tout le vocabulaire lié à la BDD (entités, propriétés, association, ...)</li>
                         <li>Construire une entité</li>
@@ -150,9 +156,12 @@
                                 rel="noopener noreferrer">draw.io</a></li>
                         <li>A partir d'une situation, sortir le schéma MCD</li>
                     </ol>
+                </div>
+
+                <li class="step">
+                    <h1>MLD</h1>
                 </li>
-                <li>Étape 2
-                    <p>MLD</p>
+                <div class="content">
                     <ol class="listeTypeDecimal">
                         <li>Notion de clé étrangère</li>
                         <li>Transformer chaque entité en table</li>
@@ -161,9 +170,12 @@
                         <li>Passer d'une association one-to-many à une FK ajouté du côté many</li>
                         <li>Passer d'une association one-to-one à une FK ajouté d'un des deux côté</li>
                     </ol>
+                </div>
+
+                <li class="step">
+                    <h1>Création et insertion</h1>
                 </li>
-                <li>Étape 3
-                    <p>Création et insertion</p>
+                <div class="content">
                     <ol class="listeTypeDecimal">
                         <li>À partir d'un MLD, créer les tables</li>
                         <li>Ajouter les PK et FK directement ou après la création</li>
@@ -171,9 +183,12 @@
                         <li>Insérer des données</li>
                         <li>Modifier des données</li>
                     </ol>
+                </div>
+
+                <li class="step">
+                    <h1>Récupérer des données</h1>
                 </li>
-                <li>Étape 4
-                    <p>Récupérer des données</p>
+                <div class="content">
                     <ol class="listeTypeDecimal">
                         <li>Récupérer une table entière</li>
                         <li>Ajuster le résultat à certaines colonnes de la table</li>
@@ -182,13 +197,12 @@
                         <li>Faire des sous-requêtes</li>
                         <li>Joindre plusieurs tables</li>
                     </ol>
-                </li>
+                </div>
             </ol>
         </div>
     </main>
 
     <script type="text/javascript" src="../JS/index.js"></script>
-
 
 </body>
 

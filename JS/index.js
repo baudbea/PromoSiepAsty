@@ -1,14 +1,16 @@
 document.addEventListener("DOMContentLoaded", function () {
     const loader = document.getElementById("code-loader");
 
-    // Sélectionner toutes les images et vidéos
     const mediaElements = [...document.images, ...document.querySelectorAll("video")];
     let loadedCount = 0;
 
     const checkAllLoaded = () => {
         loadedCount++;
         if (loadedCount === mediaElements.length) {
-            loader.style.display = "none"; // Cache le loader
+            loader.classList.add("hidden"); // Applique le fade-out
+            setTimeout(() => {
+                loader.style.display = "none"; // Cache complètement après l'animation
+            }, 250); // 1s = durée de l'animation CSS
         }
     };
 
@@ -18,16 +20,42 @@ document.addEventListener("DOMContentLoaded", function () {
                 checkAllLoaded();
             } else {
                 element.addEventListener("load", checkAllLoaded);
-                element.addEventListener("error", checkAllLoaded); // Gérer les erreurs
+                element.addEventListener("error", checkAllLoaded);
             }
         } else if (element.tagName === "VIDEO") {
             element.addEventListener("loadeddata", checkAllLoaded);
-            element.addEventListener("error", checkAllLoaded); // Gérer les erreurs
+            element.addEventListener("error", checkAllLoaded);
         }
     });
 
-    // Si aucun média n'est présent
     if (mediaElements.length === 0) {
-        loader.style.display = "none";
+        loader.classList.add("hidden");
+        setTimeout(() => {
+            loader.style.display = "none";
+        }, 250);
     }
+});
+
+document.addEventListener("DOMContentLoaded", function () {
+    const steps = document.querySelectorAll(".step");
+    const contents = document.querySelectorAll(".content");
+    const progressBar = document.getElementById("progressBar");
+    let activeIndex = -1;
+
+    steps.forEach((step, index) => {
+        step.addEventListener("click", function () {
+            if (activeIndex === index) {
+                contents[index].classList.remove("active");
+                activeIndex = -1;
+                progressBar.style.height = "0%";
+            } else {
+                if (activeIndex !== -1) {
+                    contents[activeIndex].classList.remove("active");
+                }
+                contents[index].classList.add("active");
+                activeIndex = index;
+                progressBar.style.height = ((index + 1) / steps.length) * 100 + "%";
+            }
+        });
+    });
 });

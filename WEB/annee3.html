@@ -15,7 +15,9 @@
   <div id="code-loader" class="code-loader background">
     <span>{</span><span>}</span>
   </div>
-
+  <div class="progress-bar-container">
+    <div class="progress-bar" id="progressBar"></div>
+  </div>
   <header>
     <div>
       <div class="TopMenuPageOther">
@@ -72,7 +74,7 @@
       </div>
       <div class="TopMenuPage">
         <a href="./annee3.html">
-          <button class="ButtonTop ButtonTop-roundLeft-Sous sousMenu butACTIF">
+          <button class="ButtonTop ButtonTop-roundLeft-Sous sousMenu butACTIFsousMenu">
             <span><svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                 <path d="M0 0h24v24H0z" fill="none"></path>
                 <path
@@ -125,10 +127,11 @@
       </p>
     </div>
     <div>
-      <ol type="A" class="listeTypeAlphabet">
-        <li>
-          Étape 1
-          <p>Visual studio code et base HTML</p>
+      <ol type="I">
+        <li class="step">
+          <h1>Visual Studio Code et base HTML</h1>
+        </li>
+        <div class="content">
           <ol class="listeTypeDecimal">
             <li>
               Utilisation de visual studio code
@@ -165,10 +168,12 @@
             </li>
 
           </ol>
+        </div>
+
+        <li class="step">
+          <h1>Ajout de pages et de listes</h1>
         </li>
-        <li>
-          Étape 2
-          <p>Ajout de pages et de listes</p>
+        <div class="content">
           <ol class="listeTypeDecimal">
             <li>Ajout d’une deuxième page et modification de l’URL</li>
             <li>
@@ -192,10 +197,12 @@
               </div>
             </li>
           </ol>
+        </div>
+
+        <li class="step">
+          <h1>Ajout d'images, table et liens</h1>
         </li>
-        <li>
-          Étape 3
-          <p>Ahout d'images, table et liens</p>
+        <div class="content">
           <ol class="listeTypeDecimal">
             <li>Ajout d’images src + alt (lien relatif et absolu)</li>
             <li>
@@ -217,10 +224,12 @@
               </div>
             </li>
           </ol>
+        </div>
+
+        <li class="step">
+          <h1>Début du CSS</h1>
         </li>
-        <li>
-          Étape 4
-          <p>Début du CSS</p>
+        <div class="content">
           <ol class="listeTypeDecimal">
             <li>
               Début du CSS (Lien vers fichier, utilisation des balises, Mettre
@@ -255,10 +264,12 @@
               </div>
             </li>
           </ol>
+        </div>
+
+        <li class="step">
+          <h1>Manipulation du flex</h1>
         </li>
-        <li>
-          Étape 5
-          <p>Manipulation du flex</p>
+        <div class="content">
           <ol class="listeTypeDecimal">
             <li>Utilisation d’ID et de class</li>
             <li>
@@ -280,13 +291,12 @@
               </div>
             </li>
           </ol>
-        </li>
+        </div>
       </ol>
     </div>
   </main>
 
   <script type="text/javascript" src="../JS/index.js"></script>
-
 
 </body>
 

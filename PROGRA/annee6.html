@@ -15,6 +15,9 @@
   <div id="code-loader" class="code-loader background">
     <span>{</span><span>}</span>
   </div>
+  <div class="progress-bar-container">
+    <div class="progress-bar" id="progressBar"></div>
+  </div>
 
   <header>
     <div>
@@ -102,7 +105,7 @@
           </button>
         </a>
         <a href="./annee6.html">
-          <button class="ButtonTop sousMenu butACTIF">
+          <button class="ButtonTop sousMenu butACTIFsousMenu">
             <span><svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                 <path d="M0 0h24v24H0z" fill="none"></path>
                 <path
@@ -126,121 +129,195 @@
   </header>
 
   <main class="pagesCours">
-    
+
     <div>
-      <p><i>Prérequis : révisions procédures / fonctions, exercices de mise en route.</i></p>
-      <p>Ensuite, sur les 4 heures de cours hebdomadaire, on divisera en 2 blocs :</p>
-        <ul>
-          <li>2h pour l’étude des WPF (usage d’objets)</li>
-          <li>2h pour l’étude de l’orienté objet.</li>
-        </ul> 
-       <p> Par la suite, quand les notions de base de WPF et POO sont acquises, on mêlera les deux dans des exercices plus complets.</p>
+      <p>
+        <i>Prérequis : révisions procédures / fonctions, exercices de mise en route.</i>
+      </p>
+      <p class="SmallText">Ensuite, sur les 4 heures de cours hebdomadaire, on divisera en 2 blocs :</p>
+      <ul class="SmallText">
+        <li>2h pour l’étude des WPF (usage d’objets)</li>
+        <li>2h pour l’étude de l’orienté objet.</li>
+      </ul>
+      <p class="SmallText"> Par la suite, quand les notions de base de WPF et POO sont acquises, on mêlera les deux dans
+        des exercices
+        plus complets.</p>
     </div>
-    
-    <h2>POO : Programmation Orientée Objet</h2>
-    <ol type="A" class="listeTypeAlphabet">
+    <div>
+      <h1>POO : Programmation Orientée Objet</h1>
+      <ol type="I">
+        <li class="step">
+          <h1>Introduction (présentation) générale</h1>
+        </li>
+        <div class="content PrograCote">
+          <div class="PrograInfo">
+            <ol class="listeTypeDecimal">
+              <li>Introduction : différence POO / Programmation procédurale</li>
+              <li>Utilisation de Google Diagrams pour schématiser les diagrammes UML</li>
+              <li>Premières classes</li>
+            </ol>
+          </div>
+          <div class="PrograCode">
+            <!-- CODE -->
+          </div>
+        </div>
 
-      <li>Étape 1
-        <p>Introduction (présentation) générale</p>
-        <ol class="listeTypeDecimal">
-          <li>Introduction : différence POO / Programmation procédurale</li>
-          <li>Utilisation de Google Diagrams pour schématiser les diagrammes UML</li>
-          <li>Premières classes</li>
-        </ol>
-      </li>
+        <li class="step">
+          <h1>Protection des classes</h1>
+        </li>
+        <div class="content PrograCote">
+          <div class="PrograInfo">
+            <ol class="listeTypeDecimal">
+              <li>Encapsulation : getters, setters / propriétés</li>
+              <li>Exercices variés</li>
+            </ol>
+          </div>
+          <div class="PrograCode">
+            <!-- CODE -->
+          </div>
+        </div>
 
-      <li>Étape 2
-        <p>Protection des classes</p>
-        <ol class="listeTypeDecimal">
-          <li>Encapsulation : getters, setters / propriétés</li>
-          <li>Exercices variés</li>
-        </ol>
-      </li>
+        <li class="step">
+          <h1>Entraînement et réflexion</h1>
+        </li>
+        <div class="content PrograCote">
+          <div class="PrograInfo">
+            <ol class="listeTypeDecimal">
+              <li>Corriger les UML de classes en respectant les règles et conventions</li>
+              <li>Chercher les erreurs dans des codes</li>
+              <li>références versus objets</li>
+            </ol>
+          </div>
+          <div class="PrograCode">
+            <!-- CODE -->
+          </div>
+        </div>
 
-      <li>Étape 3
-        <p>Entraînement et réflexion</p>
-        <ol class="listeTypeDecimal">
-          <li>Corriger les UML de classes en respectant les règles et conventions</li>
-          <li>Chercher les erreurs dans des codes</li>
-          <li>références versus objets</li>
-        </ol>
-      </li>
+        <li class="step">
+          <h1>Classes liées</h1>
+        </li>
+        <div class="content PrograCote">
+          <div class="PrograInfo">
+            <ol class="listeTypeDecimal">
+              <li>Association</li>
+              <li>Agrégation</li>
+              <li>Composition</li>
+              <li>Utilisation dans l'exercice de la bibliothèque</li>
+            </ol>
+          </div>
+          <div class="PrograCode">
+            <!-- CODE -->
+          </div>
+        </div>
 
-      <li>Étape 4
-        <p>Classes liées</p>
-        <ol class="listeTypeDecimal">
-          <li>Association</li>
-          <li>Agrégation</li>
-          <li>Composition</li>
-          <li>Utilisation dans l'exercice de la bibliothèque</li>
-        </ol>
-      </li>
+        <li class="step">
+          <h1>Héritage</h1>
+        </li>
+        <div class="content PrograCote">
+          <div class="PrograInfo">
+            <ol class="listeTypeDecimal">
+              <li>Notion de classes héritées : Théorie, exemples</li>
+              <li>Classes abstraites</li>
+              <li>Redéfinition de méthodes : Override</li>
+              <li>Exemples et exercices variés</li>
+            </ol>
+          </div>
+          <div class="PrograCode">
+            <!-- CODE -->
+          </div>
+        </div>
 
-      <li>Étape 5
-        <p>Héritage</p>
-        <ol class="listeTypeDecimal">
-          <li>Notion de classes héritées : Théorie, exemples</li>
-          <li>Classes abstraites</li>
-          <li>Redéfinition de méthodes : Override</li>
-          <li>Exemples et exercices variés</li>
-        </ol>
-      </li>
 
-      <li>Étape 6
-        <p>Utilisation de Bases de données MySql en C# </p>
-        <ol class="listeTypeDecimal">
-          <li>Préparation de la solution afin de dialoguer avec MySql</li>
-          <li>Chaîne de connexion</li>
-          <li>Utilisation de dataset et dataAdapter</li>
-        </ol>
-      </li>
+        <li class="step">
+          <h1>Utilisation de Bases de données MySql en C# </h1>
+        </li>
+        <div class="content PrograCote">
+          <div class="PrograInfo">
+            <ol class="listeTypeDecimal">
+              <li>Préparation de la solution afin de dialoguer avec MySql</li>
+              <li>Chaîne de connexion</li>
+              <li>Utilisation de dataset et dataAdapter</li>
+            </ol>
+          </div>
+          <div class="PrograCode">
+            <!-- CODE -->
+          </div>
+        </div>
 
-      <li>Étape 7
-        <p>Exercices globaux</p>
-        <ol class="listeTypeDecimal">
-          <li>Guichet bancaire : conception des classes, test du code en C# console</li>
-          <li>Gestion d'un bar à cocktails : conception des classes, test du code en C# console</li>
-          <li>...</li>
-        </ol>
-      </li>
-
+        <li class="step">
+          <h1>Exercices globaux</h1>
+        </li>
+        <div class="content PrograCote">
+          <div class="PrograInfo">
+            <ol class="listeTypeDecimal">
+              <li>Guichet bancaire : conception des classes, test du code en C# console</li>
+              <li>Gestion d'un bar à cocktails : conception des classes, test du code en C# console</li>
+              <li>...</li>
+            </ol>
+          </div>
+          <div class="PrograCode">
+            <!-- CODE -->
+          </div>
+        </div>
+    </div>
     </ol>
 
-    <h2>WPF une interface graphique avec gestion d'événements</h2>
-    <ol type="A" class="listeTypeAlphabet">
-
-      <li>Étape 1
-        <p>Interfaces statiques</p>
-        <ol class="listeTypeDecimal">
-          <li>Prise en main de XAML : exercices simples</li>
-          <li>Agencement des objets : test des différentes méthodes stackPanel / DockPanel / WrapPanel / Canvas</li>
-          <li>Matching game :  un jeu complet pour découvrir les événements</li>
-          <li>Events : gestion des événements d'interface</li>
-          <li>Exercices variés</li>
-        </ol>
+    <h1>WPF une interface graphique avec gestion d'événements</h1>
+    <ol type="I">
+      <li class="step">
+        <h1>Interfaces statiques</h1>
       </li>
+      <div class="content PrograCote">
+        <div class="PrograInfo">
+          <ol class="listeTypeDecimal">
+            <li>Prise en main de XAML : exercices simples</li>
+            <li>Agencement des objets : test des différentes méthodes stackPanel / DockPanel / WrapPanel / Canvas
+            </li>
+            <li>Matching game : un jeu complet pour découvrir les événements</li>
+            <li>Events : gestion des événements d'interface</li>
+            <li>Exercices variés</li>
+          </ol>
+        </div>
+        <div class="PrograCode">
+          <!-- CODE -->
+        </div>
+      </div>
 
-      <li>Étape 2
-        <p>Interfaces dynamiques</p>
-        <ol class="listeTypeDecimal">
-          <li>Création dynamique du contenu d’une fenêtre</li>
-          <li>Création de damiers en tous genres</li>
-        </ol>
+      <li class="step">
+        <h1>Interfaces dynamiques</h1>
       </li>
+      <div class="content PrograCote">
+        <div class="PrograInfo">
+          <ol class="listeTypeDecimal">
+            <li>Création dynamique du contenu d’une fenêtre</li>
+            <li>Création de damiers en tous genres</li>
+          </ol>
+        </div>
+        <div class="PrograCode">
+          <!-- CODE -->
+        </div>
+      </div>
 
-      <li>Étape 3
-        <p>Exercices récapitulatifs</p>
-        <ol class="listeTypeDecimal">
-          <li>Exercices récapitulatifs</li>
-          <li>Récupération des exercices globaux en console pour leur adapter une interface</li>
-        </ol>
+      <li class="step">
+        <h1>Exercices récapitulatifs</h1>
       </li>
-
+      <div class="content PrograCote">
+        <div class="PrograInfo">
+          <ol class="listeTypeDecimal">
+            <li>Exercices récapitulatifs</li>
+            <li>Récupération des exercices globaux en console pour leur adapter une interface</li>
+          </ol>
+        </div>
+        <div class="PrograCode">
+          <!-- CODE -->
+        </div>
+      </div>
     </ol>
+    </div>
+
   </main>
 
   <script type="text/javascript" src="../JS/index.js"></script>
-
 
 </body>
 

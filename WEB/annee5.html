@@ -15,7 +15,9 @@
   <div id="code-loader" class="code-loader background">
     <span>{</span><span>}</span>
   </div>
-
+  <div class="progress-bar-container">
+    <div class="progress-bar" id="progressBar"></div>
+  </div>
   <header>
     <div>
       <div class="TopMenuPageOther">
@@ -92,7 +94,7 @@
           </button>
         </a>
         <a href="./annee5.html">
-          <button class="ButtonTop sousMenu butACTIF">
+          <button class="ButtonTop sousMenu butACTIFsousMenu">
             <span><svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                 <path d="M0 0h24v24H0z" fill="none"></path>
                 <path
@@ -117,17 +119,19 @@
 
   <main class="pagesCours">
     <div>
-      <p> <i>
-        Cette année, nous allons attaquer la partie dynamique d'un site web.
-        Cela signifie qu'une base de données est ajouté à votre site permettant
-        un système d'utilisateurs qui auront chacun leur biens.</i>
+      <p>
+        <i>Cette année, nous allons attaquer la partie dynamique d'un site web.
+          Cela signifie qu'une base de données est ajouté à votre site permettant
+          un système d'utilisateurs qui auront chacun leur biens.</i>
       </p>
       <p class="text-danger">IMPORTANT : à la fin de chaque étape, push ton projet sur Github</p>
     </div>
     <div>
-      <ol type="A" class="listeTypeAlphabet">
-        <li>Étape 1
-          <p>Constuire des formulaires</p>
+      <ol type="I">
+        <li class="step">
+          <h1>Constuire des formulaires</h1>
+        </li>
+        <div class="content">
           <ol class="listeTypeDecimal">
             <li>Transformer tous ses fichiers html en fichiers php</li>
             <li>Créer d'un formulaire avec des fieldset, legend, des input type text et ses labels</li>
@@ -145,9 +149,12 @@
               </a> telles que palceholder, min, max, value, ...
             </li>
           </ol>
+        </div>
+
+        <li class="step">
+          <h1>Ajouter la base de données</h1>
         </li>
-        <li>Étape 2
-          <p>Ajouter la base de données</p>
+        <div class="content">
           <ol class="listeTypeDecimal">
             <li>Rappel de l'<a href="../AUTRE/annee4BDD.html" class="lienImportant">UAA7</a> de la 4ème</li>
             <li>Préparer le serveur hebergeant la base de données</li>
@@ -156,9 +163,12 @@
             <li>Connecter son site à la base de données</li>
             <li>Faire une première requête propre avec le prepare, execute et fetchAll pour récupérer les biens</li>
           </ol>
+        </div>
+
+        <li class="step">
+          <h1>Structurer son code avec MVC</h1>
         </li>
-        <li>Étape 3
-          <p>Structurer son code avec MVC</p>
+        <div class="content">
           <ol class="listeTypeDecimal">
             <li>Comprendre l'architecture MVC pour mieux structurer son projet</li>
             <li>Adapter son arborescence pour correspondre au modèle MVC</li>
@@ -167,9 +177,12 @@
             <li>Création d'un premier component navbar</li>
             <li>Afficher les pages connexion et inscription</li>
           </ol>
+        </div>
+
+        <li class="step">
+          <h1>CRUD utilisateur</h1>
         </li>
-        <li>Étape 4
-          <p>CRUD utilisateur</p>
+        <div class="content">
           <ol class="listeTypeDecimal">
             <li>Traiter le formulaire d'inscription avec $_POST</li>
             <li>Vérifier que les données ne sont pas vide côté serveur</li>
@@ -180,26 +193,35 @@
             <li>Permettre à l'utilisateur de modifier son profil</li>
             <li>Permettre à l'utilisateur de supprimer son profil</li>
           </ol>
+        </div>
+
+        <li class="step">
+          <h1>CRUD biens</h1>
         </li>
-        <li>Étape 5
-          <p>CRUD biens</p>
+        <div class="content">
           <ol class="listeTypeDecimal">
             <li>Afficher la page des biens personnels</li>
             <li>Permettre à l'utilisateur de modifier son bien</li>
             <li>Permettre à l'utilisateur de supprimer son bien</li>
             <li>Permettre à l'utilisateur de créer un nouveau bien</li>
           </ol>
+        </div>
+
+        <li class="step">
+          <h1>Partie sécurité</h1>
         </li>
-        <li>Étape 6
-          <p>Partie sécurité</p>
+        <div class="content">
           <ol class="listeTypeDecimal">
             <li>Éviter les injections SQL depuis un formulaire</li>
             <li>Empêcher une personne de supprimer/modifier le bien de quelqu'un d'autre</li>
             <li>Éviter les attaques XSS</li>
           </ol>
+        </div>
+
+        <li class="step">
+          <h1>Bonus</h1>
         </li>
-        <li>Étape 7
-          <p>Bonus</p>
+        <div class="content">
           <ol class="listeTypeDecimal">
             <li>Gérer les images dans la base de données</li>
             <li>Ajouter des flash messages avec la bonne couleur</li>
@@ -207,13 +229,12 @@
             <li>Ajouter des rôles aux utilisateurs de son site</li>
             <li>Ajouter un système de filtrage sur les biens avec $_GET</li>
           </ol>
-        </li>
+        </div>
       </ol>
     </div>
   </main>
 
   <script type="text/javascript" src="../JS/index.js"></script>
-
 
 </body>
 
