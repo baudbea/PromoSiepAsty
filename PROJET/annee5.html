@@ -15,6 +15,9 @@
   <div id="code-loader" class="code-loader background">
     <span>{</span><span>}</span>
   </div>
+  <div class="progress-bar-container">
+    <div class="progress-bar" id="progressBar"></div>
+  </div>
 
   <header>
     <div>
@@ -82,7 +85,7 @@
           </button>
         </a>
         <a href="./annee5.html">
-          <button class="ButtonTop sousMenu butACTIF">
+          <button class="ButtonTop sousMenu butACTIFsousMenu">
             <span><svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                 <path d="M0 0h24v24H0z" fill="none"></path>
                 <path
@@ -116,25 +119,79 @@
   </header>
 
   <main class="pagesCours">
-    <ol type="A" class="listeTypeAlphabet">
-      <li>Étape 1
-        <p>Gérer Git et Github</p>
-        <ol class="listeTypeDecimal">
-          <li>Créer son compte sur <a class="lienImportant" href="https://github.com/" target="_blank"
-              rel="noopener noreferrer">Github</a></li>
-          <li>Créer son premier repository</li>
-          <li>Cloner son projet sur sa machine</li>
-          <li>Ajouter et commiter ses changements à chaque étape</li>
-          <li>Pusher ses modifications sur Github</li>
-          <li>Ajouter des branches à son projet</li>
-          <li>Bonus : Faire un nouveau projet de collaboration</li>
-        </ol>
-      </li>
-    </ol>
+    <div>
+      <ol type="I">
+        <li class="step">
+          <h1>Choisir un sujet</h1>
+        </li>
+        <div class="content">
+          <ol class="listeTypeDecimal">
+            <li>Choisir un thème de projet parmi ceux proposés par le professeur</li>
+            <li>Se documenter sur ce sujet</li>
+          </ol>
+        </div>
+
+        <li class="step">
+          <h1>Gérer Git et Github</h1>
+        </li>
+        <div class="content">
+          <ol class="listeTypeDecimal">
+            <li>Créer son compte sur <a class="lienImportant" href="https://github.com/" target="_blank"
+                rel="noopener noreferrer">Github</a></li>
+            <li>Créer son premier repository</li>
+            <li>Cloner son projet sur sa machine</li>
+            <li>Ajouter et commiter ses changements à chaque étape</li>
+            <li>Pusher ses modifications sur Github</li>
+          </ol>
+        </div>
+
+        <li class="step">
+          <h1>Créer son cahier des charges</h1>
+        </li>
+        <div class="content">
+          <ol class="listeTypeDecimal">
+            <li>Etablir un cahier des charges sur base des indications (contraintes) fournies par le professeur et des
+              informations trouvées lors des recherches documentaires</li>
+          </ol>
+        </div>
+
+        <li class="step">
+          <h1>Gestion / organisation</h1>
+        </li>
+        <div class="content">
+          <ol class="listeTypeDecimal">
+            <li>Utiliser Github projects pour disposer d'un outil de gestion des tâches et d'une ligne du temps</li>
+            <li>Apprendre à prévoir ses tâches, les décrire précisément, les ajouter dans 'projects'</li>
+            <li>Organiser ses tâches par thèmes et dans le temps</li>
+            <li>Gérer l'avancement du projet</li>
+            <li>Tenir à jour une bibliographie complète</li>
+          </ol>
+        </div>
+
+        <li class="step">
+          <h1>Rédiger un rapport de projet comprenant</h1>
+        </li>
+        <div class="content">
+          <ol class="listeTypeDecimal">
+            <li>Une introduction afin d'intéresser le lecteur</li>
+            <li>Un développement expliquant les points pertinents de la démarche utilisée au fil de la réalisation du
+              projet</li>
+            <li>Une conclusion avec ouverture : si on voulait améliorer que devrait-on faire ou ce qu'on aurait du faire
+              différemment</li>
+          </ol>
+        </div>
+
+        <li class="step">
+          <h1>Oral</h1>
+        </li>
+        <div class="content">
+          <p>Explication orale de votre travail grâce à une démo devant votre professeur</p>
+        </div>
+      </ol>
+    </div>
   </main>
 
   <script type="text/javascript" src="../JS/index.js"></script>
-
 
 </body>
 
