@@ -77,6 +77,14 @@ u {
     font-family: 'Arial', sans-serif;
 }
 
+/* bloc intro */
+.intro{
+    width:80%;
+    margin : 20px;
+}
+.or{
+    color: #FF9500;
+}
 /* Styles pour les sous-listes numérotées */
 .listeTypeDecimal {
     list-style-type: decimal;
@@ -89,25 +97,34 @@ u {
     font-size: 1.1rem;
     /* Taille intermédiaire pour les sous-éléments */
     margin-bottom: 10px;
+
     color: rgba(255, 255, 255, 0.9);
     /* Presque blanc */
+}
+.listeIntroAlpha>li{
+    font-size: 1.1rem;
+    padding-bottom: 5px;
 }
 
 /* Sous-listes de compétences */
 .listeCompetences {
-    list-style-type: disc;
+    list-style-type: square;
+    line-height: 110%;
     /* Points pour les listes */
     margin-left: 20px;
     padding-left: 10px;
+    padding-top: 10px;
 }
 
 .listeCompetences>li {
     font-size: 1rem;
     /* Taille plus petite pour les détails */
+    padding: 3px;
     margin-bottom: 5px;
     color: rgba(255, 255, 255, 0.8);
     /* Blanc atténué */
 }
+
 
 /* Styles pour les liens importants */
 .lienImportant {
@@ -512,14 +529,14 @@ u {
 
 .step h1 {
     color: white;
-    text-align: center;
+    text-align: left;
     margin: 0;
     padding: 0;
-    font-size: xx-large;
+    font-size: x-large;
 }
 
 li {
-    font-size: xx-large;
+    font-size: x-large;
 }
 
 .content {
