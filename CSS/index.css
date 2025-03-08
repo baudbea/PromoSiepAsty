@@ -1,11 +1,45 @@
+:root {
+    --background-color: #FFFFFF;
+    --h1Color: #007BFF;
+    --TextColor: #2C3E50;
+    --CardBKColor: #c3c3c3;
+    --IColor: rgba(34, 34, 34, 0.61);
+    --LienColor: #893900;
+}
+
+html, body {
+    height: 100%;
+}
+
+.dark-mode {
+    --background-color: #121212;
+    --h1Color: #00BFFF;
+    --TextColor: #E0E0E0;
+    --CardBKColor: #1a1a1a;
+    --IColor: rgba(255, 255, 255, 0.61);
+    --LienColor: #FF9500;
+}
+
+
 body {
     height: 100%;
     padding: 0;
-    margin: 50px 0 0 0;
+    margin: 50px 0 50px 0;
     overflow-x: hidden;
     overflow-y: auto;
     font-family: sans-serif;
-    background-color: #121212;
+    background-color: var(--background-color);
+    transition: all 0.3s, color 0.3s;
+    display: flex;
+    flex-direction: column;
+}
+
+.toggle-btn {
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+    font-size: 24px;
 }
 
 .code-loader {
@@ -19,13 +53,21 @@ body {
 }
 
 header {
-    position: fixed;
     width: 100%;
-    top: 25px;
-    left: 0;
     display: flex;
     justify-content: center;
     z-index: 2;
+}
+
+footer {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: auto;
+    /* Cette ligne permet de "pousser" le footer vers le bas si nécessaire */
+    z-index: 2;
+    margin-bottom: 70px;
+    padding-bottom: 15px;
 }
 
 .leftDecal {
@@ -45,16 +87,11 @@ h1 {
     margin: 0;
     padding: 3% 0 0 0;
     text-align: center;
-    color: #00BFFF;
-}
-
-.pagesCours {
-    margin: 165px 40px 0 40px;
-    color: white;
+    color: var(--h1Color);
 }
 
 .pagesCours i {
-    color: rgba(255, 255, 255, 0.61);
+    color: var(--IColor);
 }
 
 .text-danger {
@@ -71,17 +108,27 @@ u {
 
 /* Styles pour la structure principale */
 .pagesCours {
-    margin: 165px 40px 0 40px;
+    margin: 40px 40px 0 40px;
     color: white;
     /* Couleur blanche pour tout le texte */
     font-family: 'Arial', sans-serif;
+}
+
+/* bloc intro */
+.intro {
+    width: 80%;
+    margin: 20px;
+}
+
+.or {
+    color: var(--LienColor);
 }
 
 /* Styles pour les sous-listes numérotées */
 .listeTypeDecimal {
     list-style-type: decimal;
     /* Numérotation des sous-éléments */
-    margin-left: 20px;
+    margin: 10px 0 10px 30px;
     padding: 0;
 }
 
@@ -89,29 +136,40 @@ u {
     font-size: 1.1rem;
     /* Taille intermédiaire pour les sous-éléments */
     margin-bottom: 10px;
-    color: rgba(255, 255, 255, 0.9);
+
+    color: var(--TextColor);
     /* Presque blanc */
+}
+
+.listeIntroAlpha>li {
+    font-size: 1.1rem;
+    padding-bottom: 5px;
+    color: var(--TextColor);
 }
 
 /* Sous-listes de compétences */
 .listeCompetences {
-    list-style-type: disc;
+    list-style-type: square;
+    line-height: 110%;
     /* Points pour les listes */
     margin-left: 20px;
     padding-left: 10px;
+    padding-top: 10px;
 }
 
 .listeCompetences>li {
     font-size: 1rem;
     /* Taille plus petite pour les détails */
+    padding: 3px;
     margin-bottom: 5px;
-    color: rgba(255, 255, 255, 0.8);
+    color: var(--TextColor);
     /* Blanc atténué */
 }
 
+
 /* Styles pour les liens importants */
 .lienImportant {
-    color: #FF9500;
+    color: var(--LienColor);
     /* Bleu clair pour les liens */
     text-decoration: none;
     /* Pas de soulignement par défaut */
@@ -180,7 +238,7 @@ u {
 .cardFront p {
     margin: 0;
     text-align: center;
-    color: #E0E0E0;
+    color: var(--TextColor);
     padding: 0 5%;
 }
 
@@ -200,7 +258,7 @@ u {
     width: 90%;
     margin: 7% 5% 0% 5%;
     border-radius: 15px;
-    border: solid 2px #1E1E1E;
+    border: solid 2px var(--TextColor);
 }
 
 .hr-with-text {
@@ -214,19 +272,19 @@ u {
     content: "";
     flex: 1;
     height: 2px;
-    background: #E0E0E0;
+    background: var(--TextColor);
 }
 
 .hr-with-text::after {
     content: "";
     flex: 1;
     height: 2px;
-    background: #E0E0E0;
+    background: var(--TextColor);
 }
 
 .hr-with-text span {
     margin: 0 15px;
-    color: #E0E0E0;
+    color: var(--TextColor);
     font-weight: bold;
     white-space: nowrap;
     font-size: larger;
@@ -236,7 +294,7 @@ u {
 .hr-with-text span:hover {
     font-size: x-large;
     cursor: pointer;
-    text-shadow: #E0E0E0 1px 0 5px;
+    text-shadow: var(--TextColor) 1px 0 5px;
 }
 
 .topMargForHead {
@@ -255,7 +313,7 @@ u {
     letter-spacing: 0.05em;
     border-radius: 0em;
     border: none;
-    background: #121212;
+    background: var(--background-color);
     box-shadow: 0px 0px 4px 1px #00C897;
     color: #00C897;
     overflow: hidden;
@@ -333,7 +391,7 @@ u {
     margin-top: 2px;
     font-weight: 300;
     font-size: 17px;
-    background: #121212;
+    background: var(--background-color);
     box-shadow: 0px 0px 3px 1px #5DADEC;
     color: #5DADEC;
     border-left: 1px solid #5DADEC;
@@ -365,7 +423,7 @@ u {
 .cardColor {
     width: 50%;
     padding: 1px 1px 5px 1px;
-    background: #E0E0E0;
+    background: var(--TextColor);
     border-radius: 10px;
     transition: all .3s;
     margin: 7%;
@@ -377,7 +435,7 @@ u {
 .cardFront {
     width: 100%;
     height: 100%;
-    background-color: #1a1a1a;
+    background-color: var(--CardBKColor);
     border-radius: 10px;
     transition: all .2s;
     padding-bottom: 4px;
@@ -491,7 +549,7 @@ u {
 .card__description {
     margin: 10px 0 0;
     font-size: 14px;
-    color: #000000;
+    color: var(--TextColor);
     line-height: 1.4;
 }
 
@@ -505,21 +563,22 @@ u {
 .step {
     cursor: pointer;
     padding: 10px;
-    background: #000000;
+    background: var(--CardBKColor);
     margin-top: 25px;
     border-radius: 5px;
+    color: var(--TextColor);
 }
 
 .step h1 {
-    color: white;
-    text-align: center;
+    color: var(--TextColor);
+    text-align: left;
     margin: 0;
     padding: 0;
-    font-size: xx-large;
+    font-size: x-large;
 }
 
 li {
-    font-size: xx-large;
+    font-size: x-large;
 }
 
 .content {
@@ -527,16 +586,18 @@ li {
     max-height: 0;
     overflow: hidden;
     padding: 0 10px;
-    background: #000000;
+    background: var(--CardBKColor);
     border-left: 4px solid #007BFF;
     transition: max-height 0.5s ease-out, opacity 0.5s ease-in;
     display: block;
+    color: var(--TextColor);
 }
 
 .content.active {
     max-height: 1000px;
     opacity: 1;
     padding: 10px;
+
 }
 
 .progress-bar-container {
@@ -547,6 +608,7 @@ li {
     position: fixed;
     right: 0;
     top: 0;
+
 }
 
 .progress-bar {
@@ -560,6 +622,7 @@ li {
 
 .SmallText li {
     font-size: 15px;
+
 }
 
 .PrograCote {
@@ -577,9 +640,37 @@ li {
     min-height: 10px;
 }
 
+.EtapeOL {
+    padding-left: 65px;
+    list-style: none;
+    /* Supprime la numérotation par défaut */
+    counter-reset: step-counter;
+    /* Initialise un compteur */
+}
 
+.step {
+    counter-increment: step-counter;
+    /* Incrémente le compteur */
+    list-style: none;
+    /* Assure que la numérotation standard est désactivée */
+}
+
+.step::before {
+    content: "Étape " counter(step-counter);
+    font-weight: bold;
+    position: absolute;
+    left: 10px;
+}
 
 @media screen and (max-width: 700px) {
+    .step::before {
+        content: "E" counter(step-counter);
+    }
+
+    .EtapeOL {
+        padding-left: 40px;
+    }
+
     .CardsList {
         display: block;
         margin: 0px 10px;

@@ -12,6 +12,7 @@
 </head>
 
 <body class="background">
+    <span class="toggle-btn" id="themeToggle">🌙</span>
     <div id="code-loader" class="code-loader background">
         <span>{</span><span>}</span>
     </div>
@@ -94,16 +95,6 @@
                             </svg> 4ème</span>
                     </button>
                 </a>
-                <a href="./annee4BDD.html">
-                    <button class="ButtonTop sousMenu">
-                        <span><svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M0 0h24v24H0z" fill="none"></path>
-                                <path
-                                    d="M24 12l-5.657 5.657-1.414-1.414L21.172 12l-4.243-4.243 1.414-1.414L24 12zM2.828 12l4.243 4.243-1.414 1.414L0 12l5.657-5.657L7.07 7.757 2.828 12zm6.96 9H7.66l6.552-18h2.128L9.788 21z"
-                                    fill="currentColor"></path>
-                            </svg> 4ème BDD</span>
-                    </button>
-                </a>
                 <a href="./annee6.html">
                     <button class="ButtonTop sousMenu">
                         <span><svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
@@ -129,8 +120,130 @@
     </header>
 
     <main class="pagesCours">
-        <h1>En cours</h1>
+        <div class="intro">
+            <ol type="A" class="listeIntroAlpha">
+                <li>Compétence : Sécuriser les données d’un système informatique.
+                    <ol class="listeCompetences">
+                        <li>L’UAA8 est dédiée à la sécurité d’accès aux données, ainsi qu’à leurs protections.</li>
+                        <li> Elle balaie les risques les plus courants auxquels sont soumises les informations stockées
+                            en local ou en réseau, indépendamment du système d’exploitation.</li>
+                        <li>L’UAA 8 favorise la découverte et l’application de techniques empêchant que les données
+                            soient compromises de manière volontaire ou involontaire. </li>
+                        <li>La finalité est d'amener l’élève à établir des stratégies d’accès personnalisées, à assurer
+                            la protection de l’ordinateur et des plateformes qu’il emploie, et à prévenir la perte de
+                            données.</li>
+                    </ol>
+                </li>
+
+                <li>Estimation du temps : La durée prévue est idéalement de 20 à 25 périodes</li>
+            </ol>
+        </div>
+        <h1>Base de donnée</h1>
+        <div>
+            <p>
+                <i>Cette UAA est très importante car elle sera utilisée aussi bien dans la partie Web
+                    que dans la partie programmation. Dans 90% des projets existants, une base de données
+                    existe pour alimenter l'application. C'est un élément essentiel et le premier point
+                    d'attaque pour les hackers.</i>
+            </p>
+        </div>
+        <div class="intro">
+            <i>
+                <ol type="A" class="listeIntroAlpha">
+
+                    <li>Compétence : Gérer une base de données relationnelle multitables.</li>
+                    <li>Estimation du temps : La durée prévue est idéalement de 35 à 40 périodes</li>
+
+                </ol>
+            </i>
+        </div>
+
+        <div>
+            <ol class="EtapeOL">
+                <li class="step">
+                    <h1>MCD</h1>
+                </li>
+                <div class="content">
+                    <ol class="listeTypeDecimal">
+                        <li>Tout le vocabulaire lié à la BDD (entités, propriétés, association, ...)</li>
+                        <li>Construire une entité</li>
+                        <li>Ajouter à cette entité ses propriétés</li>
+                        <li>Chaque propriété aura son bon type</li>
+                        <li>Relier ces entités avec une association correct</li>
+                        <li>Ajouter les cardinalités de cette association</li>
+                        <li>Savoir citer chaque cardinalité par son nom</li>
+                        <li>Faire un schéma grâce à <a class="lienImportant" href="http://draw.io" target="_blank"
+                                rel="noopener noreferrer">draw.io</a></li>
+                        <li>A partir d'une situation, sortir le schéma MCD</li>
+                    </ol>
+                </div>
+
+                <li class="step">
+                    <h1>MLD</h1>
+                </li>
+                <div class="content">
+                    <ol class="listeTypeDecimal">
+                        <li>Notion de clé étrangère</li>
+                        <li>Transformer chaque entité en table</li>
+                        <li>Passer d'une association many-to-many à une nouvelle table avec la création de la PK et les
+                            FK</li>
+                        <li>Passer d'une association one-to-many à une FK ajouté du côté many</li>
+                        <li>Passer d'une association one-to-one à une FK ajouté d'un des deux côté</li>
+                    </ol>
+                </div>
+
+                <li class="step">
+                    <h1>Création et insertion</h1>
+                </li>
+                <div class="content">
+                    <ol class="listeTypeDecimal">
+                        <li>À partir d'un MLD, créer les tables</li>
+                        <li>Ajouter les PK et FK directement ou après la création</li>
+                        <li>Modifier les caractéristiques des données</li>
+                        <li>Insérer des données</li>
+                        <li>Modifier des données</li>
+                    </ol>
+                </div>
+
+                <li class="step">
+                    <h1>Récupérer des données</h1>
+                </li>
+                <div class="content">
+                    <ol class="listeTypeDecimal">
+                        <li>Récupérer une table entière</li>
+                        <li>Ajuster le résultat à certaines colonnes de la table</li>
+                        <li>Limiter le nombre de résultat selon des critères</li>
+                        <li>Utiliser les fonctions liées au langage SQL</li>
+                        <li>Faire des sous-requêtes</li>
+                        <li>Joindre plusieurs tables</li>
+                    </ol>
+                </div>
+            </ol>
+        </div>
     </main>
+
+    <footer class="leftDecal">
+        <a href="https://www.asty-moulin.be">
+            <button class="ButtonTop ButtonTop-roundLeft">
+                <span><svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M0 0h24v24H0z" fill="none"></path>
+                        <path
+                            d="M24 12l-5.657 5.657-1.414-1.414L21.172 12l-4.243-4.243 1.414-1.414L24 12zM2.828 12l4.243 4.243-1.414 1.414L0 12l5.657-5.657L7.07 7.757 2.828 12zm6.96 9H7.66l6.552-18h2.128L9.788 21z"
+                            fill="currentColor"></path>
+                    </svg> Asty-Moulin</span>
+            </button>
+        </a>
+        <a href="https://www.cabanga.be">
+            <button class="ButtonTop ButtonTop-roundRight">
+                <span><svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M0 0h24v24H0z" fill="none"></path>
+                        <path
+                            d="M24 12l-5.657 5.657-1.414-1.414L21.172 12l-4.243-4.243 1.414-1.414L24 12zM2.828 12l4.243 4.243-1.414 1.414L0 12l5.657-5.657L7.07 7.757 2.828 12zm6.96 9H7.66l6.552-18h2.128L9.788 21z"
+                            fill="currentColor"></path>
+                    </svg> Cabanga</span>
+            </button>
+        </a>
+    </footer>
 
     <script type="text/javascript" src="../JS/index.js"></script>
 
